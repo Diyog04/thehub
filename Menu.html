@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THEHUBCafe&Restro.Menu</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='Main.css'>
+    <link rel='website icon' type='png' href="./img/logo.jpg" media='screen'>
+    <style>
+        .menu {
+            width: 100%;
+            float: left;
+            height: 100%;
+        }
+
+        .menu .active {
+            color: #ff8201;
+        }
+
+        .menu-1 {
+            width: 100%;
+            float: right;
+            display: block;
+        }
+
+
+
+        .ul1 {
+            float: left;
+            display: block;
+            margin-top: -600;
+            margin-left: 250;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul {
+            margin-top: -200px;
+            margin-left: 260px;
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        body {
+            background-image: url(./img/1.jpeg);
+            background-position: center;
+            background-size: cover;
+            /*background-repeat: no-repeat;*/
+
+        }
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 0 25%;
+            margin-top: 40px;
+            margin-left: 280px;
+        }
+
+        .title {
+            position: absolute;
+            margin-top: -70px;
+            margin-left: 180px;
+        }
+
+        .product {
+            color: #000;
+            flex-wrap: wrap;
+            flex: 1 0 25%;
+        }
+
+        .products {
+            font-family: 'Times New Roman';
+            display: flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin-left: -120px;
+        }
+
+        .by {
+            cursor: pointer;
+            color: black;
+            font-size: 20px;
+        }
+
+        .by:hover {
+            background-color: #ff7200;
+            transition-delay: 0.03s;
+        }
+
+        @media screen and (min-width: 768px) {
+            .products-grid {
+                grid-gap: 20px;
+                /* increase gap for larger screens */
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            .products {
+                margin-bottom: 20px;
+                /* increase margin for smaller screens */
+            }
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 0 25%;
+            margin-top: 40px;
+            margin-left: 280px;
+        }
+
+        .title {
+            position: absolute;
+            margin-top: -145px;
+            margin-left: 320px;
+            color: #fff;
+        }
+
+        .container {
+            background: transparent;
+            background: fixed;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 240px 0;
+            padding-left: 235px;
+            margin-top: -200px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+
+        .h4 {
+            margin-top: 20px;
+        }
+
+        .pl {
+            float: left;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+            margin-top: -215px;
+        }
+
+        footer p {
+            color: #ccc;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .row {
+            margin-left: -200px;
+
+        }
+
+        .cntr {
+            width: 75%;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 300px;
+            margin-bottom: -350px;
+        }
+
+        .botton {
+            margin-top: 20px;
+            margin-left: -180px;
+            display: grid;
+        }
+
+        .call {
+            width: 200px;
+            height: 40px;
+            background: #ff7200;
+            margin-bottom: 10px;
+            margin-left: -300px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            border-radius: 50px 0;
+            border-color: #fcf204;
+            margin-top: -185px;
+        }
+
+        .call {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: 0.3s ease;
+        }
+
+        .call:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .book {
+            width: 200px;
+            height: 40px;
+            background: #ff7200;
+            margin-bottom: 10px;
+            margin-left: -300px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            border-radius: 50px 0;
+            border-color: #fcf204;
+            margin-top: -120px;
+        }
+
+        .book {
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s ease;
+        }
+
+        .book:hover {
+            background-color: #fff;
+        }
+
+        .social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons li a {
+            color: rgb(249, 1, 1);
+            font-size: 24px;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .image-edit {
+            margin-left: -250px;
+            margin-top: -240px;
+        }
+
+        .icons a {
+            text-decoration: #fff;
+            color: #fff;
+        }
+
+        .icons ion-icon {
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 70px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+
+        .h7 {
+            font-size: 25px;
+            font-family: "Times New Roman";
+            margin-left: 600px;
+            margin-top: -400px;
+        }
+
+        .p {
+            font-weight: bolder;
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            margin-left: 500px;
+            margin-top: -100px;
+        }
+
+
+        .containder {
+            background: transparent;
+            background: fixed;
+            margin-left: -550px;
+        }
+
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 65px 0;
+            margin-top: 150px;
+            padding-left: 380px;
+            margin-left: -400px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-top: 55px;
+            margin-right: 50px;
+        }
+
+        .ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+            margin-top: -25px;
+        }
+
+
+        footer p {
+            color: #ccc;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .row {
+            margin-left: -200px;
+            margin-top: -45px;
+        }
+
+        .cntr {
+            width: 75%;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 32px;
+            margin-bottom: -350px;
+
+        }
+
+        .social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons li a {
+            color: rgb(249, 1, 1);
+            font-size: 24px;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .icons a {
+            text-decoration: #fff;
+            color: #fff;
+        }
+
+        .icons ion-icon {
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+
+        .h7 {
+            font-size: 25px;
+            font-family: 'Times New Roman';
+            margin-left: 600px;
+            margin-top: -400px;
+        }
+
+        .p {
+            font-weight: bolder;
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            margin-left: 500px;
+            margin-top: -100px;
+        }
+
+        .pic {
+            margin-left: -50px;
+
+        }
+
+        .order {
+            width: 200px;
+            height: 40px;
+            background: #ff7200;
+            margin-bottom: 10px;
+            margin-left: 700px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+            border-radius: 50px 0;
+            border-color: #fcf204;
+            margin-top: -185px;
+        }
+
+        .order {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: .3s ease;
+        }
+
+        .order:hover {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        @media screen and (max-width : 1000px) {}
+
+
+
+        @media screen and (min-width: 768px) {
+            .products-grid {
+                grid-gap: 20px;
+                /* increase gap for larger screens */
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+            .products {
+                margin-bottom: 20px;
+                /* increase margin for smaller screens */
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body style="width: 100%;">
+
+    <div class="image">
+        <a href="/index.html"> <img src="./img/logo.jpg"
+                style="width: 225px; margin-left: 15px; margin-top: 10px;" /></a>
+    </div>
+    <div class="menu">
+        <ul style=" margin-top:-223px; margin-left: 235px;">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Menu.html" class="active">MENU</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="Contact.html">CONTACT</a></li>
+
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="head">
+            <h1 class="title" style="text-align: center;"> OUR MENU</h1>
+        </div>
+        <div>
+            <!-- inserting products -->
+            <div class="products" style="margin-left: -10px;">
+                <div class="product" style="margin-left: -70px;">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+
+                </div>
+                <div class="product" style="margin-left: 200px;">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product" style="margin-top: -336px; margin-left:204px;">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button><br>
+                </div>
+            </div>
+
+
+
+
+            <div class="products">
+
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button><br>
+                </div>
+            </div>
+
+
+
+
+            <div class="products">
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button><br>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="products">
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button>
+                </div>
+                <div class="product">
+                    <img src="./img/21.jpeg" alt="bonsai img" height="150">
+                    <h2>cjvvhdvhds</h2>
+                    <p>price : 180rs</p>
+                    <br>
+
+                    <button type="button" class="by"> <a href="form.html">Buy</a>
+                        <span><i class="fas fa-plus"></i></span>
+                    </button><br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <div class="container">
+        <div class="head">
+            <h1 class="title" style="text-align: center;"> OUR MENU</h1>
+
+
+        </div>
+
+
+        <div class="pic">
+            <img src="./img/5.jpeg " width="1000px" height="870px">
+            <img src="./img/6.jpg " width="1000px" height="1200px">
+            <img src="./img/7.jpg " width="1000px" height="770px">
+        </div -->
+
+
+
+
+    <footer>
+        <footer style="margin-top: -10px;">
+            <div class="footer">
+
+                <div class="image-2">
+                    <a href="/index.html"> <img src="./img/24.jpeg"
+                            style="width: 225px; margin-left: -200px; margin-top: -80px;" /></a>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h3 style="font-size: 25px;">About Us</h3>
+                        <p>THE HUB CAFE & RESTRO, a culinary sanctuary <br>where flavors converge and stories
+                            unfold.
+                        </p>
+                    </div>
+
+                    <div class="follow">
+                        <h4 style="margin-top: 20px;">Follow Us On</h4>
+                        <div class="icons">
+                            <div class="icon">
+
+                                <a href="https://www.facebook.com/profile.php?id=100088877815335">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                                <a href="https://www.instagram.com/bloombonsai/">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="menu-1">
+                        <ul class="ul1" style="margin-top: -182px; margin-left:450px;">
+                            <h11 style="margin-left: 40px; font-size: 25px;">Quick Links</h11>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="Menu.html">MENU</a></li>
+                            <li><a href="About.html">ABOUT</a></li>
+                            <li><a href="Gallery.html">GALLERY</a></li>
+                            <li><a href="Contact.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4" style="margin-left: 780px; margin-top: -235px;">
+                        <h3 style="font-size: 25px;">Contact Us</h3>
+                        <ul class="pl">
+                            <li>Email: thehubcafe&restro@gmail.com</li>
+                            <li>Phone: 021-547590</li>
+                            <li>Khorsane, Morang, Nepal</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="hours" style="margin-left: 800px; margin-top:-25px;">
+                        <h8 style="font-size: 25px; margin-left:350px;">Opening Hours</h8>
+                        <ul class="hour" style="display: block;">
+                            <li>Sunday - Thursday: 7am - 10pm</li>
+                            <li>Saturday: Closed</li>
+                            <li>Friday: 11am - 11:30pm</li>
+                        </ul>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </footer>
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        </div>
+        </div>
+
+
+
+</body>
+
+</html

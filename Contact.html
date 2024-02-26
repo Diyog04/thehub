@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>THEHUBCafe&Restro.Contact</title>
+    <link rel='website icon' type='png' href="./img/logo.jpg" media='screen'
+        href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .testimonials {
+            padding: 40px 0;
+            color: #434343;
+            text-align: center;
+
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        
+
+
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            margin-top: -600px;
+            margin-left: -100px;
+        } 
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+            color: rgb(0, 0, 0);
+
+        }
+
+        .testimonial {
+
+            padding: 30px;
+            background-color: #fff;
+            border: #000;
+            border-color: #000;
+
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            color: #6ab04c;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+
+
+        .menu {
+            width: 100%;
+            float: left;
+            height: 107vh;
+        }
+
+        .menu .active {
+            color: #ff8201;
+        }
+
+        .menu-1 {
+            width: 100%;
+            float: right;
+            display: block;
+        }
+
+        .h11 {
+            margin-top: -600px;
+        }
+
+        .ul1 {
+            float: left;
+            display: block;
+            margin-top: -600;
+            margin-left: 250;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        ul {
+            float: left;
+            display: flex;
+            margin-top: -275px;
+            margin-left: 260px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        body {
+            background-image: url(./img/1.jpeg);
+            /*background-repeat: no-repeat;*/
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .ser {
+            margin-left: 330px;
+            margin-top: 40px;
+            display: flex;
+            gap: 110px;
+
+        }
+
+
+        .tk {
+            width: 200px;
+            height: 55px;
+            background: #ff7200;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+
+        .content .tk {
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+
+        .tk:hover {
+            background-color: #fff;
+
+        }
+
+        .del {
+            width: 200px;
+            height: 55px;
+            background: #ff7200;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+
+        .del {
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+
+        .del:hover {
+            background-color: #fff;
+
+        }
+
+        .rev {
+            width: 200px;
+            height: 55px;
+            background: #ff7200;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+
+        .rev {
+            text-decoration: none;
+            color: #000;
+            transition: .3s ease;
+        }
+
+        .rev:hover {
+            background-color: #fff;
+
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+
+        .container {
+            background: transparent;
+            background: fixed;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 65px 0;
+            padding-left: 250px;
+            margin-top: -50px;
+            padding-top: 100px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+
+        .ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+            margin-top: -25px;
+        }
+
+
+        footer p {
+            color: #ccc;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .roww {
+            margin-left: -200px;
+            margin-top: -45px;
+        }
+
+        .cntr {
+            width: 75%;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 900px;
+            margin-top: -450px;
+
+        }
+
+        .social-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons li a {
+            color: rgb(249, 1, 1);
+            font-size: 24px;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .icons a {
+            text-decoration: #fff;
+            color: #fff;
+        }
+
+        .icons ion-icon {
+            color: #fff;
+            font-size: 30px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s ease;
+        }
+
+        .icons ion-icon:hover {
+            color: #ff7200;
+        }
+
+        .h7 {
+            font-size: 25px;
+            font-family: 'Times New Roman';
+            margin-left: 600px;
+            margin-top: -400px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 300px;
+            color: #fff;
+            margin-left: -125px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .container {
+            background: transparent;
+            background: fixed;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            padding: 85px 410px;
+
+
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-top: 30px;
+            margin-right: 50px;
+        }
+
+        .ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100px;
+            margin-top: -25px;
+        }
+
+
+        footer p {
+            color: #ccc;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .row {
+            margin-left: -200px;
+            margin-top: -205px;
+        }
+
+        @media screen and (max-width:1149px) {
+            .row {
+                margin-left: 10px;
+            }
+        }
+
+        @media screen and (max-width:1149px) {
+            footer {
+                padding-top: 180px;
+            }
+        }
+
+        @media screen and (max-width:1149px) {
+            .cntr {
+                width: 55%;
+                margin-bottom: -235px;
+            }
+        }
+
+        @media screen and (max-width:1149px) {
+            .ser {
+                gap: 90;
+                margin-left: 238px;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="image">
+        <a href="/index.html"> <img src="./img/logo.jpg"
+                style="width: 225px; margin-left: 15px; margin-top: 10px;" /></a>
+    </div>
+
+    <div class="menu">
+        <ul style=" margin-top:-185px; margin-left: 275px">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Menu.html">MENU</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="Contact.html" class="active">CONTACT</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <p style="margin-top: -30px; margin-left:300px; color:white; font-size:25px;"> To contact us for deliveries,
+            carry-out orders, reservations or any other questions: </p>
+        <div class="row">
+            <div class="form">
+                <form action="/contact.html">
+                    <h4>Talk With Us:</h4>
+
+                    <form id="feedback-form" action="Product.html">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="feedback">Feedback:</label>
+                        <textarea id="feedback" name="feedback"></textarea>
+
+                        <input type="submit" value="submit" onclick="fun();">
+                    </form>
+
+                    <div>
+
+                        <script type="text/javascript">
+                            function fun() {
+                                alert("THANK YOU FOR YOUR FEEDBACK");
+                            }
+                        </script>
+                    </div>
+                </form>
+            </div>
+
+
+
+            <div class="cntr">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d329.06405490056414!2d87.3920554477618!3d26.667726973142802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1684491535607!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+
+
+            <footer>
+                <footer style="margin-top: -10px;">
+                    <div class="footer">
+
+                        <div class="image-2">
+                            <a href="/index.html"> <img src="./img/24.jpeg"
+                                    style="width: 225px; margin-left: -600px; margin-top: -80px;" /></a>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div style="margin-left:-42rem;" class="col-md-4">
+                                <h3 style="font-size: 25px; margin-right: 56rem; margin-top: 15rem;">About Us</h3>
+                                <p>THE HUB CAFE & RESTRO, a culinary sanctuary <br>where flavors converge and
+                                    stories
+                                    unfold.
+                                </p>
+                            </div>
+
+
+
+                            <div class="menu-1">
+                                <ul class="ul1" style="margin-top: -180px; margin-left:25px;">
+                                    <h5 style="margin-left: 40px; font-size: 25px;">Quick Links</h5>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="Menu.html">MENU</a></li>
+                                    <li><a href="About.html">ABOUT</a></li>
+                                    <li><a href="Gallery.html">GALLERY</a></li>
+                                    <li><a href="Contact.html">CONTACT</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-md-4" style="margin-left: -22px; margin-top: -275px;">
+                                <h3 style="font-size: 25px; margin-left:50px;">Contact Us</h3>
+                                <ul class="pl" style="margin-top: 20px; margin-left:30px; display:contents">
+                                    <li>Email: thehubcafe&restro@gmail.com</li>
+                                    <li>Phone: 021-547590</li>
+                                    <li>Khorsane, Morang, Nepal</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="hours" style="margin-left: 220px; margin-top:-25px;">
+                                <h6 style="font-size: 25px; margin-left:350px; margin-top:-230px;">Opening Hours</h6>
+                                <ul class="hour" style="display: block; margin-top:8px; margin-left:300px;">
+                                    <li>Sunday - Thursday: 7am - 10pm</li>
+                                    <li>Saturday: Closed</li>
+                                    <li>Friday: 11am - 11:30pm</li>
+                                </ul>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </footer>
+            </footer>
+        </div>
+
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
